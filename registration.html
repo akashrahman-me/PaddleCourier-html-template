@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"/>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/signup.css"> <!-- ONLY FOR REG & LOGIN FORM -->
+    <link rel="icon" href="assets/images/favicon.ico" />
+</head>
+<body data-spy="scroll" data-target="#navbarContain" data-offset="0">
+
+    <!-- ========== Navbar ========== -->
+    <!--  nav[style] attribute for uniqe navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-jquery" style="background: white;top:0;position:sticky!Important;">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/images/header-logo.png" height="90px" alt="" style="margin: -10px 0" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 mt-4 mt-lg-0" id="navbarContain">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#service">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tracking">Tracking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Price</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Area Coverage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactus">Contact Us</a>
+                    </li>
+
+                </ul>
+                <a href="./registration.html" class="top-nav-btn">Sign up as Paddle Courier</a>
+            </div>
+        </div>
+    </nav>
+    <!-- ========== /Navbar ========== -->
+
+    
+    <!-- ========== Registration Form ========== -->
+    <section class="register">
+        <!-- MultiStep Form -->
+        <div class="container-fluid" id="grad1">
+            <div class="row justify-content-center mt-0">
+                <div class="col-11 col-sm-9 col-md-7 col-lg-6 text-center p-0 mt-3 mb-2">
+                    <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                        <h2><strong>Paddlec Courier Registration</strong></h2>
+                        <p>Fill all form field to go to next step</p>
+                        <div class="row">
+                            <div class="col-md-12 mx-0">
+                                <form id="msform">
+                                    <!-- progressbar -->
+                                    <ul id="progressbar">
+                                        <li class="active" id="account"><strong>Account</strong></li>
+                                        <li id="personal"><strong>Personal</strong></li>
+                                        <li id="payment"><strong>Payment</strong></li>
+                                        <li id="confirm"><strong>Finish</strong></li>
+                                    </ul> <!-- fieldsets -->
+                                    <fieldset>
+                                        <div class="form-card">
+                                            <h2 class="fs-title">Account Information</h2>
+                                            <input type="text" id="company_name" name="company_name" placeholder="Business Name">
+                                            <input type="text" id="web_url" name="web_url" placeholder="Site URL">
+                                            <select name="district_id" id="district_id" class="list-dt" style="width: 100%">
+                                                <option value="0">Select City</option>
+                                                <option value="55">Bagerhat</option>
+                                                <option value="22">Bandarban</option>
+                                                <option value="49">Barguna</option>
+                                                <option value="50">Barishal</option>
+                                                <option value="51">Bhola</option>
+                                                <option value="41">Bogura</option>
+                                                <option value="23">Brahmanbaria</option>
+                                                <option value="24">Chandpur</option>
+                                                <option value="42">Chapai Nawabganj</option>
+                                                <option value="25">Chattogram</option>
+                                                <option value="56">Chuadanga</option>
+                                                <option value="27">Cox's Bazar</option>
+                                                <option value="26">Cumilla</option>
+                                                <option value="1">Dhaka</option>
+                                                <option value="65">Dhaka Sub</option>
+                                                <option value="33">Dinajpur</option>
+                                                <option value="2">Faridpur</option>
+                                                <option value="28">Feni</option>
+                                                <option value="34">Gaibandha</option>
+                                                <option value="3">Gazipur</option>
+                                                <option value="4">Gopalganj</option>
+                                                <option value="19">Habiganj</option>
+                                                <option value="14">Jamalpur</option>
+                                                <option value="57">Jashore</option>
+                                                <option value="52">Jhalokati</option>
+                                                <option value="58">Jhenaidah</option>
+                                                <option value="43">Joypurhat</option>
+                                                <option value="68">Keranigonj</option>
+                                                <option value="29">Khagrachari</option>
+                                                <option value="59">Khulna</option>
+                                                <option value="5">Kishoreganj</option>
+                                                <option value="35">Kurigram</option>
+                                                <option value="60">Kushtia</option>
+                                                <option value="30">Lakshmipur</option>
+                                                <option value="36">Lalmonirhat</option>
+                                                <option value="6">Madaripur</option>
+                                                <option value="61">Magura</option>
+                                                <option value="7">Manikganj</option>
+                                                <option value="62">Meherpur</option>
+                                                <option value="20">Moulvibazar</option>
+                                                <option value="8">Munshiganj</option>
+                                                <option value="15">Mymensingh</option>
+                                                <option value="44">Naogaon</option>
+                                                <option value="63">Narail</option>
+                                                <option value="9">Narayanganj</option>
+                                                <option value="66">Narayanganj Sub</option>
+                                                <option value="10">Narsingdi</option>
+                                                <option value="45">Natore</option>
+                                                <option value="16">Netrakona</option>
+                                                <option value="37">Nilphamari</option>
+                                                <option value="31">Noakhali</option>
+                                                <option value="46">Pabna</option>
+                                                <option value="38">Panchagarh</option>
+                                                <option value="53">Patuakhali</option>
+                                                <option value="54">Pirojpur</option>
+                                                <option value="11">Rajbari</option>
+                                                <option value="47">Rajshahi</option>
+                                                <option value="32">Rangamati</option>
+                                                <option value="39">Rangpur</option>
+                                                <option value="64">Satkhira</option>
+                                                <option value="67">Savar</option>
+                                                <option value="12">Shariatpur</option>
+                                                <option value="17">Sherpur</option>
+                                                <option value="48">Sirajganj</option>
+                                                <option value="21">Sunamganj</option>
+                                                <option value="18">Sylhet</option>
+                                                <option value="13">Tangail</option>
+                                                <option value="40">Thakurgaon</option>
+                                            </select>
+
+                                            <select name="branch_id" id="branch_id" class="list-dt" style="width: 100%">
+                                                 <option value="0">Select Zone</option>
+                                            </select>
+                                            <input type="text" id="address" name="address" placeholder="Address">
+                                            <input type="text" id="referred_by" name="referred_by" placeholder="Referred By">
+                                            <input type="text" id="product_type" name="product_type" placeholder="Product Type">
+                                        </div>
+                                        <input type="button" name="next" class="next action-button" value="Next Step" />
+                                    </fieldset>
+                                    <fieldset>
+                                        <div class="form-card">
+                                            <h2 class="fs-title">Personal Information</h2>
+                                            <input type="text" id="name" name="name" placeholder="Name">
+                                            <input type="email" id="email" name="email" placeholder="Email">
+                                            <input type="text" id="contact_number" name="contact_number" placeholder="Phone Number">
+                                            <input type="password" id="password" name="password" placeholder="Password">
+                                            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password">
+                                        </div>
+                                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> <input type="button" name="next" class="next action-button" value="Next Step" />
+                                    </fieldset>
+                                    <fieldset>
+                                        <div class="form-card">
+                                            <h2 class="fs-title">Payment Information</h2>
+                                            <select class="list-dt" id="payment_type" name="payment_type">
+                                                <option selected="">Select Payment Type</option>
+                                                <option value="1">Cash</option>
+                                                <option value="2">Bank</option>
+                                                <option value="3">Bkash</option>
+                                                <option value="4">Nagad</option>
+                                                <option value="5">Rocket</option>
+                                            </select>
+                                            <div id="selectionItem">
+                                                <div data-selection-item="2">
+                                                    <select class="list-dt" id="bank_name" name="bankname">
+                                                        <option value="" selected="">Select Bank Name</option>
+                                                        <option>Islami Bank Limited</option>
+                                                        <option>DBL</option>
+                                                        <option>EBL</option>
+                                                        <option>Bank Asia</option>
+                                                    </select>
+                                                    <input type="text" id="bank_account_name" name="bank_account_name" placeholder="Bank Account Holder ">
+                                                    <input type="text" id="bank_account_no" name="bank_account_no" placeholder="Bank Account Number">
+                                                    <input type="text" id="bank_branch_name" name="bank_branch_name" placeholder="Branch Name">
+                                                    <input type="text" id="routing_no" name="routing_no" placeholder="Routing Number">
+                                                </div>
+                                                <div data-selection-item="3">
+                                                      <input type="text" id="bkash_number" name="bkash_number" placeholder="Bkash Number">
+                                                </div>
+                                                <div data-selection-item="4">
+                                                      <input type="text" id="nagad_number" name="nagad_number" placeholder="Nagad Number">
+                                                </div>
+                                                <div data-selection-item="5">
+                                                      <input type="text" id="rocket_number" name="rocket_number" placeholder="Rocket Number">
+                                                </div>  
+                                            </div>
+                                            
+                                        </div> <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> <input type="button" name="make_payment" class="next action-button" value="Confirm" />
+                                    </fieldset>
+                                    <fieldset>
+                                        <div class="form-card">
+                                            <h2 class="fs-title text-center">Success !</h2> <br><br>
+                                            <div class="row justify-content-center">
+                                                <div class="col-3"> <img src="https://img.icons8.com/color/96/000000/ok--v2.png" class="fit-image"> </div>
+                                            </div> <br><br>
+                                            <div class="row justify-content-center">
+                                                <div class="col-7 text-center">
+                                                    <h5>You Have Successfully Signed Up</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== /Registration Form ========== -->
+
+
+
+
+    <!-- ========== Footer ========== -->
+    <footer>
+        <div class="custom-shape-divider-bottom2">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"
+                ></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-7 col-lg-5 pt-5 mb-lg-5 footer1">
+                    <a href="#"><img src="assets/images/header-logo.png" width="120px" alt="" style="filter: saturate(0) brightness(5)" /></a>
+                    <p class="mt-4 mb-5 text-light address">Sumi Tower, Plot No.-66,66/1, Block-D, Chiriyakhana Road, Mirpur-2,Dhaka-1216</p>
+                    <span class="text-light pe-3"><i class="fas fa-phone-alt"></i></span><span><a class="text-light" href="tel:+880 9696-848858">+880 9696-848858</a></span><br />
+                    <span class="text-light foot-span2"><i class="fas fa-envelope pe-3"></i><a class="text-light" href="mailto:info@paddlecourier.com">info@paddlecourier.com</a></span>
+                </div>
+                <div class="col-12 col-md-5 col-lg-3 pt-3 pt-lg-5 mb-lg-5 footer2">
+                    <h5 class="text-light pb-3">Important Links</h5>
+                    <div class="important-links d-flex flex-column mb-lg-5">
+                        <a class="mb-3 text-light" href="#">C2C</a>
+                        <a class="mb-4 text-light" href="#">Enterprise</a>
+                        <a class="mb-4 text-light" href="#">Coverage Area</a>
+                        <a class="mb-4 text-light" href="#">Privacy Policy</a>
+                        <a class="mb-4 text-light" href="#">FAQ's</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 pt-3 pt-lg-5 mb-5 footer3">
+                    <h5 class="text-light mb-4">Download Our Mobile App</h5>
+                    <a href="#">
+                        <img class="me-2" src="assets/images/google_play.png" width="130px" height="38" alt="" />
+                    </a>
+                    <a href="#">
+                        <img src="assets/images/app_store.png" width="130px" height="38px" alt="" />
+                    </a>
+                    <p class="footer-copyright">&copy;&nbsp;Paddle Courier. All rights reserved.</p>
+                    <div class="social pt-3">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== /Footer ========== -->
+
+    <!-- Link of javascript -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/regform.js"></script><!-- ONLY FOR REG & LOGIN FORM -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
